@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f9fb;
+            margin: 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 16px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px #eee;
+            padding: 24px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 16px;
+        }
+
+        .name {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 4px;
+        }
+
+        .title {
+            color: #555;
+            font-size: 1em;
+            margin-bottom: 8px;
+        }
+
+        .desc {
+            color: #444;
+            font-size: 0.98em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="card">
+            <img src="./Assets/shailav.png" alt="Profile 1">
+            <div class="name">Shailav Malik</div>
+            <div class="title">Frontend Developer</div>
+            <div class="desc">Passionate about building interactive UIs and web experiences.</div>
+        </div>
+        <div class="card">
+            <img src="./Assets/sarthak.png" alt="Profile 2">
+            <div class="name">Sarthak Vats</div>
+            <div class="title">UI/UX Designer</div>
+            <div class="desc">Designs clean, user-friendly interfaces for modern apps.</div>
+        </div>
+        <div class="card">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Profile 3">
+            <div class="name">Sakshi Poonia</div>
+            <div class="title">Backend Engineer</div>
+            <div class="desc">Loves solving problems and optimizing server performance.</div>
+        </div>
+    </div>
+</body>
+
+</html>
